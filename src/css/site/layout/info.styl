@@ -1,0 +1,75 @@
++media(any)
+
+  .info
+    display: flex
+    padding: 47px 0 0
+    &__item
+      flex: 1
+      max-width: 276px
+      position: relative
+      margin-left: 95px
+      &:before
+        content: ''
+        display: block
+        position: absolute
+        top: 0
+        left: -70px
+        width: 1px
+        height: 48px
+        background: colors.bg
+      &:first-child
+        flex: 1
+        padding-left: 0
+        margin-left: 0
+        &:before
+          display: none
+
+    &__icon
+      margin-bottom: 9px
+
+    &__title
+      font-size: 16px
+      line-height: 1.25
+
+
++media(mq.desktop)
+
+  .info
+    flex-wrap: wrap
+    padding-top: 34px
+    &__item
+      width: 50%
+      flex: none
+      max-width: none
+      margin-left: 0
+      box-sizing: border-box
+      padding-right: 160px
+      &:before
+        display: none
+      &:nth-child(n + 3)
+        padding-top: 38px
+
+    &__title
+      font-size: 14px
+
+
++media(mq.phone)
+
+  .info
+    padding-top: 24px
+    &__item
+      width: 100%
+      padding-right: 19px
+      display: flex
+      align-items: center
+      &:nth-child(n + 2)
+        padding-top: 20px
+
+    &__icon
+      margin-bottom: 0
+      margin-right: 19px
+      img
+        max-width: 28px
+
+    &__title
+      font-size: 12px

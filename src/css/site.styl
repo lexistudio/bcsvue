@@ -1,0 +1,13 @@
+@require "bare/lib/index"
+
+@require "site/settings"
+
+use-bare()
+use-webfonts()
+use-forms()
+
+// Max width
+mq.desktop           = mq-narrower(1400px)
+mq.phone             = mq-narrower(765px)
+
+@require "site/index"

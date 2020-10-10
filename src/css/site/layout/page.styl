@@ -1,0 +1,38 @@
++media(any)
+
+  *
+    outline: none
+
+  a
+    color: colors.link
+    text-decoration: none
+    &:hover
+      text-decoration: none
+
+  body, html
+    height: 100%
+    background: colors.white
+    text-style: text.sans-body
+
+  .container
+    max-width: 1472px
+    margin: auto
+    padding: 0 20px
+    +media(mq.desktop)
+      padding: 0 16px
+    +media(mq.phone)
+      padding: 0 12px
+      box-sizing: border-box
+
+  .title
+    padding-top: 104px
+    margin: 0
+    font-size: 44px
+    line-height: 1
+    font-weight: 600
+    +media(mq.desktop)
+      padding-top: 90px
+      font-size: 32px
+    +media(mq.phone)
+      padding-top: 58px
+      font-size: 24px
